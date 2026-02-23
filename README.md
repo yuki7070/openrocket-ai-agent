@@ -1,19 +1,23 @@
 # openrocket-ai-agent
 
-OpenRocketをPythonから操作し、ロケット設計のシミュレーションと多目的最適化を行うエージェントリポジトリです。
+OpenCodeを使ってOpenRocketのロケット設計シミュレーションと多目的最適化を対話的に実行するエージェントリポジトリです。
 
 ## Requirements
 
 - Python 3.12 (`uv` で依存管理)
 - Java 17 (`sdk env install`)
+- OpenCode CLI
 - `OpenRocket-15.03.jar`（リポジトリルート）
 
 ## Quick Start
 
 ```bash
+sdk env install
 uv sync
-uv run python examples/main.py
+opencode
 ```
+
+`opencode` 起動後、`AGENTS.md` のワークフローに沿って「inspect-rocket -> define-problem -> ...」の順に進めると、ロケット設計最適化を一通り実行できます。
 
 ## Repository Structure
 
