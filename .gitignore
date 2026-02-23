@@ -1,0 +1,26 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Local config and secrets
+.env
+.claude/
+
+# Notebook cache
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+
+# Experiment data (large files)
+experiments/*
+!experiments/.gitkeep
+
+OpenRocket*.jar
